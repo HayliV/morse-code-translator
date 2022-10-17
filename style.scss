@@ -1,0 +1,68 @@
+@use "./partials/mixins";
+@use "./partials/palette";
+@use "./partials/typography";
+
+body {
+    background-color: palette.$pink-lace;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-family: typography.$primary-font;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.english {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+
+    &__title {
+        font-family: typography.$primary-font;
+    }
+
+    &__textarea {
+        width: 300px;
+        height: 150px;
+    }
+
+    &__translate {
+        margin-top: 5px;
+        padding: 5px;
+        font-family: typography.$primary-font;
+        background-color: palette.$little-boy-blue;
+    }
+}
+
+.morse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+
+    &__title {
+        font-family: typography.$primary-font;
+    }
+
+    &__textarea {
+        width: 300px;
+        height: 150px;
+    }
+
+    &__translate {
+        margin-top: 5px;
+        padding: 5px;
+        font-family: typography.$primary-font;
+        background-color: palette.$little-boy-blue;
+    }
+}
