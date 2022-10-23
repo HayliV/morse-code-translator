@@ -1,1 +1,30 @@
 @use "./palette";
+@use "./typography";
+
+@mixin button-styling {
+    margin-top: 5px;
+    padding: 5px;
+    font-family: typography.$primary-font;
+    background-color: mix(#fff, #e91e63, 85%);
+    align-items: center;
+
+    border: 2px solid mix(#fff, #e91e63, 85%);
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #f45bbc;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}

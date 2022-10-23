@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <link rel="stylesheet" href="style.css" />
+        <script defer type="module" src="./modules/DOM.js"></script>
+        <script defer type="module" src="./modules/data.js"></script>
+        <script defer type="module" src="./modules/logic.js"></script>
     </head>
     <body>
         <div>
@@ -14,14 +17,24 @@
         <div class="inputs">
             <div class="english">
                 <h1 class="english__title">English</h1>
-                <textarea class="english__textarea"></textarea>
-                <button class="english__translate">Translate</button>
+
+                <textarea
+                    class="english__textarea"
+                    id="englishInput"></textarea>
+                <button
+                    type="submit"
+                    id="submitEnglish"
+                    class="english__translate">
+                    Translate
+                </button>
             </div>
 
             <div class="morse">
                 <h1 class="morse__title">Morse Code</h1>
-                <textarea class="morse__textarea"></textarea>
-                <button class="morse__translate">Translate</button>
+                <textarea class="morse__textarea" id="morseOutput"></textarea>
+                <button class="morse__translate" id="submitMorse">
+                    Translate
+                </button>
             </div>
         </div>
     </body>

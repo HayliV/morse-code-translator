@@ -10,6 +10,10 @@ body {
   text-align: center;
   font-weight: bold;
   font-family: "ubuntu", sans-serif;
+  color: #fcdde8;
+  font-size: 100px;
+  font-weight: 900;
+  text-shadow: -0.0075em 0.0075em 0 #fef2f6, 0.005em 0.005em 0 #f6a5c1, 0.01em 0.01em 0 #f7aac4, 0.015em 0.015em #f7aec7, 0.02em 0.02em 0 #f8b3ca, 0.025em 0.025em 0 #f8b7cd, 0.03em 0.03em 0 #f8bcd0, 0.035em 0.035em 0 #f9c0d3;
 }
 
 .inputs {
@@ -26,16 +30,72 @@ body {
 }
 .english__title {
   font-family: "ubuntu", sans-serif;
+  color: #fcdde8;
+  font-size: 50px;
+  font-weight: 900;
+  text-shadow: -0.0075em 0.0075em 0 #fef2f6, 0.005em 0.005em 0 #f6a5c1, 0.01em 0.01em 0 #f7aac4, 0.015em 0.015em #f7aec7, 0.02em 0.02em 0 #f8b3ca, 0.025em 0.025em 0 #f8b7cd, 0.03em 0.03em 0 #f8bcd0, 0.035em 0.035em 0 #f9c0d3;
 }
 .english__textarea {
   width: 300px;
   height: 150px;
+  resize: none;
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+  border: none;
+  outline: none;
+  background-color: #fcdde8;
 }
 .english__translate {
   margin-top: 5px;
   padding: 5px;
   font-family: "ubuntu", sans-serif;
-  background-color: #7c9fe1;
+  background-color: #fcdde8;
+  align-items: center;
+  border: 2px solid #fcdde8;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #f45bbc;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 30px;
+  font-weight: 900;
+  text-shadow: -0.0075em 0.0075em 0 #fef2f6, 0.005em 0.005em 0 #f6a5c1, 0.01em 0.01em 0 #f7aac4, 0.015em 0.015em #f7aec7, 0.02em 0.02em 0 #f8b3ca, 0.025em 0.025em 0 #f8b7cd, 0.03em 0.03em 0 #f8bcd0, 0.035em 0.035em 0 #f9c0d3;
+}
+.english__translate:after {
+  background-color: #f45bbc;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform 0.2s ease-out;
+  z-index: -1;
+}
+.english__translate:hover:after {
+  transform: translate(0, 0);
+}
+.english__translate:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+.english__translate:hover {
+  outline: 0;
 }
 
 .morse {
@@ -46,14 +106,70 @@ body {
 }
 .morse__title {
   font-family: "ubuntu", sans-serif;
+  color: #fcdde8;
+  font-size: 50px;
+  font-weight: 900;
+  text-shadow: -0.0075em 0.0075em 0 #fef2f6, 0.005em 0.005em 0 #f6a5c1, 0.01em 0.01em 0 #f7aac4, 0.015em 0.015em #f7aec7, 0.02em 0.02em 0 #f8b3ca, 0.025em 0.025em 0 #f8b7cd, 0.03em 0.03em 0 #f8bcd0, 0.035em 0.035em 0 #f9c0d3;
 }
 .morse__textarea {
   width: 300px;
   height: 150px;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+  border: none;
+  resize: none;
+  outline: none;
+  background-color: #fcdde8;
 }
 .morse__translate {
   margin-top: 5px;
   padding: 5px;
   font-family: "ubuntu", sans-serif;
-  background-color: #7c9fe1;
+  background-color: #fcdde8;
+  align-items: center;
+  border: 2px solid #fcdde8;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #f45bbc;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 30px;
+  font-weight: 900;
+  text-shadow: -0.0075em 0.0075em 0 #fef2f6, 0.005em 0.005em 0 #f6a5c1, 0.01em 0.01em 0 #f7aac4, 0.015em 0.015em #f7aec7, 0.02em 0.02em 0 #f8b3ca, 0.025em 0.025em 0 #f8b7cd, 0.03em 0.03em 0 #f8bcd0, 0.035em 0.035em 0 #f9c0d3;
+}
+.morse__translate:after {
+  background-color: #f45bbc;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform 0.2s ease-out;
+  z-index: -1;
+}
+.morse__translate:hover:after {
+  transform: translate(0, 0);
+}
+.morse__translate:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+.morse__translate:hover {
+  outline: 0;
 }
