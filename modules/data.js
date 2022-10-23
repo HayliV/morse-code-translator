@@ -86,3 +86,9 @@ export const english = {
     "-..-.": "/",
     ".----.": "'",
 };
+
+export const regexEnglish = /^[\w,?;:/'\s]*$/g;
+console.log(regexEnglish.test("hi,"));
+
+export const regexMorse =
+    /^[.-]{1,5}(?:[ \t]+[.-]{1,5})*(?:[ \t]+[.-]{1,5}(?:[ \t]+[.-]{1,5})*)*$/;
